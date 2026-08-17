@@ -132,3 +132,42 @@ header .navbar {
     justify-content: space-between;
 }
 
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xx1);
+    color: #D2C1B6;
+    font-family:cursive;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-x1);
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .description {
+    max-width: 70%;
+margin: 24px 0 40px;
+font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    color: #D2C1B6;
+    border-radius: var(--border-radius-m);
+    background: #1F150C;
+    font-weight: var(--font-weight-medium);
+
+}
+
+
+.hero-section .hero-details .button:hover{
+    color: orange;
+}
+
