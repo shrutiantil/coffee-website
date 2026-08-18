@@ -112,12 +112,17 @@ header .navbar {
   background: #d2c1b6;
 }
 
-.navbar #menu-open-button,
+.navbar :where(#close-button, #open-button) {
+  display:none ;
+}
+
+
+/* .navbar #menu-open-button,
 .navbar #menu-close-button {
   display: none;
   color: var(--white-color);
   font-size: var(--font-size-1);
-}
+} */
 
 .hero-section {
   min-height: 100vh;
@@ -152,7 +157,6 @@ header .navbar {
   max-width: 70%;
   margin: 24px 0 40px;
   font-size: var(--font-size-m);
-  line-height: 1.7;
 }
 
 .hero-section .hero-details .buttons {
@@ -184,6 +188,7 @@ header .navbar {
 }
 
 @media screen and (max-width: 900px) {
+
   :root {
     --font-size-m: 1rem;
     --font-size-1: 1.3rem;
@@ -191,15 +196,39 @@ header .navbar {
     --font-size-xx1: 1.8rem;
   }
 
-.navbar #menu-open-button {
+body.show-mobile-menu header::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(0,0,0,0.2);
+}
 
 
+.navbar :where(#close-button, #open-button) {
+  font-size: var(--font-size-1);
+  display: block;
+}
+
+
+.navbar #close-button {
+position: absolute;
+right: 30px;
+top: 30px;
+}
+
+
+.navbar #open-button {
+  color: white;
 }
 
     .navbar .nav-menu {
         display: block;
         position: fixed;
-        left: 0;
+        left: -300px;
         top: 0;
         width: 300px;
         height: 100%;
@@ -208,7 +237,14 @@ header .navbar {
         flex-direction: column;
         padding-top: 100px;
         background: white;
+        transition: left 0.3s ease;
     }
+
+
+    body.show-mobile-menu .navbar .nav-menu {
+      left: 0;
+    }
+
 
         .navbar .nav-menu .nav-link {
             color: #1f150c;
