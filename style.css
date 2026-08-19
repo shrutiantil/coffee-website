@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -116,12 +116,6 @@ header .navbar {
 }
 
 
-/* .navbar #menu-open-button,
-.navbar #menu-close-button {
-  display: none;
-  color: var(--white-color);
-  font-size: var(--font-size-1);
-} */
 
 .hero-section {
   min-height: 100vh;
@@ -270,4 +264,4 @@ top: 30px;
 
 
 
-}
+} */
