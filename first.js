@@ -1,2 +1,3 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav_links");
+const menuBtnIcon = document.querySelector("i");
