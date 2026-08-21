@@ -21,7 +21,7 @@
 
 .section_container {
   max-width: var(--max-width);
-  pad: 5rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .section_header {
@@ -130,4 +130,46 @@ z-index: -1;
 
 .nav_links a:hover {
   color: var(--text-dark);
+}
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding:  2rem 1rem;
+    max-width:  var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; 
+   }
+
+ .nav_header {
+  flex: 1;
+  padding: 0;
+  background-color: transparent;
+ }  
+
+  .nav_logo h2 {
+    color: white;
+}
+
+ .nav_menu_btn {
+  display: none;
+ }
+
+ .nav_links {
+  position: static;
+  width: fit-content;
+  padding: 0;
+  flex-direction: row;
+  background-color: transparent;
+  transform: none !important;
+ }
+
+
+ .nav_links a:hover {
+  color: var(--primary-color);
+ }
+
 }
