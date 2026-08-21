@@ -16,3 +16,5 @@ navLinks.addEventListener("click", (e) => {
     navLinks.classList.remove("open");
     menuBtnIcon.setAttributeNS("class", "ri-menu-3-lines");
 });
+
+const scrollReval
