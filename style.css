@@ -216,6 +216,31 @@ z-index: -1;
   transform: translateY(-1rem);
 }
 
+.menu_card_content {
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.menu_card_content h4 {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+}
+
+.menu_card_content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@media (width > 540px) {
+  .menu_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (width > 768px) {
   nav {
     position: static;
