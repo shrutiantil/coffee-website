@@ -213,7 +213,8 @@ z-index: -1;
 }
 
 .menu_card img {
-  width: 300px;
+  width: 275px;
+  height: 300px;
 }
 
 .menu_card:hover {
