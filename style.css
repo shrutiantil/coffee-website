@@ -296,6 +296,19 @@ z-index: -1;
   margin-left: auto;
 }
 
+.about_container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.about_content .section_header {
+  margin-bottom: 2rem;
+}
+
+.about_content > div {
+  padding: 2rem;
+  border-left: 2px solid var(--secondary-color);
+}
 
 @media (width > 540px) {
   .menu_grid {
