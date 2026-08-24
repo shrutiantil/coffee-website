@@ -282,10 +282,32 @@ z-index: -1;
   color: var(--white);
 }
 
+.book_container input {
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  outline: none;
+}
+
+.book_container .btn {
+  width: fit-content;
+  margin-left: auto;
+}
+
 
 @media (width > 540px) {
   .menu_grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .book_container form {
+    padding: 1.5rem;
+  }
+
+  .book_container .input_row:not(:last-child) {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -346,6 +368,10 @@ z-index: -1;
 
  .menu_grid {
   grid-template-columns: repeat(4, 1fr);
+ }
+
+ .book_container {
+  padding: 2rem;
  }
 
 }
