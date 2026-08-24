@@ -274,7 +274,12 @@ z-index: -1;
 .book_container .input_group {
   display: grid;
   gap: 10px;
-  
+}
+
+.book_container label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
 }
 
 
